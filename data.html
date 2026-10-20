@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find Sigma Store branches">
+    <title>Sigma Store - Our Branches</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="card" href="index.html">Home</a>
+            <a class="card" href="data.html">Branches</a>
+            <a class="card" href="validation.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main class="data-section">
+        <h1>Our Store Branches</h1>
+
+        <p>Welcome to Sigma Store! Find our branches across Egypt.</p>
+
+        <div class="search-box">
+            <label for="searchInput">Search for a branch:</label>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by name, city, address, or employees..."
+            >
+        </div>
+
+        <div class="sort-buttons">
+            <button type="button" id="sortName">
+                Sort by Branch Name
+            </button>
+
+            <button type="button" id="sortEmployees">
+                Sort by Employees
+            </button>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Branch Name</th>
+                        <th>City</th>
+                        <th>Address</th>
+                        <th>Employees</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+
+        <p id="tableMessage" role="status" aria-live="polite"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sigma Store</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create your Sigma Store account">
+    <title>Sign Up | Sigma Store</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validation.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a class="card" href="index.html">Home</a>
+            <a class="card" href="data.html">Branches</a>
+            <a class="card" href="validation.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <main>
+        <form id="registrationForm" class="registration-form" novalidate>
+            <h1>Create Account</h1>
+            <p class="form-description">
+                Please fill in your information.
+            </p>
+
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <small id="nameError" class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <small id="emailError" class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <small id="passwordError" class="error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword"
+                       name="confirmPassword" required>
+                <small id="confirmPasswordError" class="error"
+                       aria-live="polite"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age"
+                       min="1" max="120" step="1" required>
+                <small id="ageError" class="error" aria-live="polite"></small>
+            </div>
+
+            <button type="submit">Create Account</button>
+
+            <p id="formMessage" class="success-message"
+               role="status" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Shimaa</p>
+    </footer>
+
+</body>
+</html>
